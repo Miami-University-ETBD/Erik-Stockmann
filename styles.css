@@ -3,14 +3,34 @@ body{
     }
     p{
         color:rgba(20,20,30,.9);
+        padding-left:10px;
     }
     .materials{
         color:rgba(20,20,30,.9);
         padding:10px;
     }
+    .navigation{
+      overflow:hidden;
+      background-color:rgba(30,30,40,.95);
+      padding: 10px;
+    }
+    .navigation a {
+      color:rgb(220,210,200);
+      text-align:center;
+      text-decoration:none;
+      font-size:20px;
+      padding:10 px;
+      margin-right:20px;
+    
+    }
+    .navigation a:hover{
+      background-color:rgba(20,20,30,.9);
+      padding: 10px 5px;
+      }
     li.materials{
         color:rgba(20,20,30,.9);
         padding:10px;
+        display:block;
     }
     
     h1{
@@ -52,8 +72,8 @@ body{
     font-size:20px;
     }
     li a:hover{
-    background-color:rgba(20,20,30,.9);
-    }
+      background-color:rgba(20,20,30,.9);
+      }
     tr{
     border-bottom: 1px solid rgba(30,35,40,.9);
       padding:15px;
@@ -71,33 +91,56 @@ body{
     color:rgb(30,45,60);
     }
     .progress{
-    font-size:130%;
-    color:rgb(20,50,100);
-    margin-bottom:10px;
+      background-color:rgba(30, 33, 40, 0.9);
+      color:rgb(220,230,230);
+      font-size:130%;
+    padding:2px 10px;
+    padding-left:15px;
+    margin-bottom:20px;
+    margin-top:10px;
     }
     header{
       text-align:center;
       font-family: Avenir Next, Tahoma, sans serif;
       font-size:150%;
+      margin-top:10px;margin-bottom:15px;
     }
     footer{
         background-color:rgba(30,30,40,.95);
-        color:rgb(220,210,200);
+        color:rgb(220,230,230);
         padding:10 px;
         text-align:right;
         padding-right:15%;
         margin-top:10px;
         padding-top:20px;
-        padding-bottom:50px;
+        padding-bottom:40px;
+        font-size:110%;
     }
     .foot{
-        margin-top:50px;
+        margin-top:60px;
+        margin-bottom:20px;
     text-align:right;
     padding-right:15%;
     }
     .ClothingHeading{
           background-color:rgba(20,20,30,.9);
         color:rgb(220,230,230);
-      padding:10px;
-      padding-bottom:30px;
+        font-size:140%;
+      padding:2px 10px;
+      padding-left:15px;
+    }
+    .goal{
+      padding-left:10px;
+      margin-top:60px;
+    }
+    .footernotes{
+      color:rgb(220,210,200);
+      font-size:80%;
+    }
+    .welcome{
+background-color:rgba(141, 175, 224, .5);
+border-bottom: 1px solid rgb(33, 37, 53);
+border-top: 1px solid rgb(33, 37, 53);
+padding:10px 5px;
+margin-left:10px;
     }
