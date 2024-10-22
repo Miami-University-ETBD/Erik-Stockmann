@@ -4,31 +4,78 @@
 <link rel="stylesheet" href="styles.css">
 
 
-<title> Reqiuem Clothing Brand</title>
+<title> requiem clothing page</title>
 
 <meta charset="UTF-8">
 </head>
 
 <body>
 <header>Requiem</header>
-<ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="Selection.html">Clothing Selection</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li style="margin-left:150px;"><i class="fa-solid fa-sort-down"></i></li>
-</ul>
-<div>
-<img src="/images/YinYang.jpg" alt="Yin Yang Koi" style="width:203px;height:304px;">
+<nav class="navigation">
+<a href="index.html">Home</a>
+<a href="Selection.html">Store Location</a>
+<a href="about.html">About Us</a>
+</nav>
 
-<h2>Website Info</h2>
-<p>This Website has been created to hold a variety of interesting artwork, ideas, and products.</p>
+<h2>Welcome to Requiem</h2>
+<p class="welcome">You are invited to the Requiem clothing Store!</p>
+<p>We offer cool clothing made with skin-friendly organic materials</p>
+<p>We are located at 17775 E High Street, Oxford, OH 45056</p>
 <br>
-<h2>Clothing not in Stock</h2>
-<p>This page will eventually hold Pants, shirts, and socks. They have not been produced nor has the website been completely set up yet.</p>
 
+<h2>Current in-store Selections</h2>
+<div class="grid-container">
+<div style="background-color:rgb(163, 201, 255);">
+  <h2 style="background-color:rgb(100, 140, 180);padding-top:7px;padding-bottom:30px;">Men's Clothing</h2>
+  <p>This Categorie includes pants, jackets and shirts</p>
 </div>
+
+<div style="background-color:#3e9ba8;">
+  <h2 style="background-color:#2f6e76;padding-top:7px;padding-bottom:30px;">Women's Clothing</h2>
+  <p>This Categorie includes pants, jackets, shirts.</p>
+</div>
+
+<div style="background-color:#6d76c0; color:azure;">
+  <h2 style="color:azure; background-color:#2a2c71; padding-top:7px;padding-bottom:30px;">Unisex Clothing</h2>
+  <p style="color:azure">Most of the Clothing in this website would likely not be made for one particular Gender</p>
+  <p style="color:azure">This Category includes V-necks, T-shirts, Long sleeved Shirts, jackets.</p>
+</div>
+</div>
+<br>
+  <hr>
+  <br>
+
+
+<h2 style="margin-bottom:20px;">Art</h2>
+<hr>
+
+<aside>
+    <img src="images/YinYang.jpg" alt="Yin Yang Koi" float="right" width="203px" height="304px;">
+    <img src="images/Screenprint.png" alt="OtherKoi" float="right" width="250px" height="304px;">
+</aside>
+<p>Requiem values art and creativity. We are a clothing store made by art majors from Miami University. We would like to share our art and design ideas with you.</p>
+<p style="margin-bottom:100px;">We encourage you to join our community and share your critisms! Feel free to post your art as well!</p>
+<div width="80%" style="margin-bottom:140px;">
+    <input id="userInput"> <br><br>
+    <button onclick="myFunction()">Submit Critique</button>
+    <p id="message"></p>
+    <script>function myFunction() {
+    let userInput = document.querySelector ("#userInput");
+    let message = document.querySelector ("#message");
+
+    message.innerHTML = "We have recieved your Critique, Thank you for your input!";
+    }
+</script>
+</div>
+
 <div class="foot">Naturally Cool Clothing</div>
-<footer class="foot">
-2024 Requiem All rights reserved</footer>
+<footer>
+    2024 Requiem All rights reserved
+    <br>
+    <br>
+    <h3 class="footernotes">contact Info:</h3>
+    <p class="footernotes">Phone Number: (513)800-336-8888</p>
+    <p class="footernotes">email adress:RequiemApparel952.store@gmail.com</p>
+    </footer>
 </body>
 </html>
