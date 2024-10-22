@@ -144,3 +144,27 @@ border-top: 1px solid rgb(33, 37, 53);
 padding:10px 5px;
 margin-left:10px;
     }
+    aside.mine{
+      width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+    }
+  aside {
+    flex: 50%;
+width: 40%;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-left: .5rem;
+  margin-left: .5rem;
+  float: right;
+  box-shadow: inset 5px #201d49;
+}
+#userInput2{
+  display:none;
+}
+#hiddenmessage{
+  display:none;
+}

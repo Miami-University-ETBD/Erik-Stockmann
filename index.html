@@ -46,12 +46,27 @@
   <br>
 
 
-<h2>Art</h2>
+<h2 style="margin-bottom:20px;">Art</h2>
+<hr>
+
 <aside>
-    <img src="/images/YinYang.jpg" alt="Yin Yang Koi" style="width:203px;height:304px;">
+    <img src="images/YinYang.jpg" alt="Yin Yang Koi" float="right" width="203px" height="304px;">
+    <img src="images/Screenprint.png" alt="OtherKoi" float="right" width="250px" height="304px;">
 </aside>
 <p>Requiem values art and creativity. We are a clothing store made by art majors from Miami University. We would like to share our art and design ideas with you.</p>
-<p>We encourage you to join our community and share your critisms! Feel free to post your art as well!</p>
+<p style="margin-bottom:100px;">We encourage you to join our community and share your critisms! Feel free to post your art as well!</p>
+<div width="80%" style="margin-bottom:140px;">
+    <input id="userInput"> <br><br>
+    <button onclick="myFunction()">Submit Critique</button>
+    <p id="message"></p>
+    <script>function myFunction() {
+    let userInput = document.querySelector ("#userInput");
+    let message = document.querySelector ("#message");
+
+    message.innerHTML = "We have recieved your Critique, Thank you for your input!";
+    }
+</script>
+</div>
 
 <div class="foot">Naturally Cool Clothing</div>
 <footer>
