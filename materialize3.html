@@ -8,6 +8,15 @@
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <!--Import Materialize CSS-->
    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+   <!--fixing carousel settings-->
+   <style>
+
+    .carousel-item img {
+       height: 100%;  /* Fill carousel height */
+       width: auto;   /* Maintain aspect ratio */
+       object-fit: contain; /* Prevent zooming/cropping */
+    }
+ </style>
 </head>
 
 <body>
