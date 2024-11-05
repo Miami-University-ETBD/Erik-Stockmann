@@ -4,103 +4,100 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Anastasis Bakery Sec3</title>
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
    <!--Import Google Icon Font-->
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!--Import materialize.css-->
+   <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+</head>
 
 <body>
-     <!-- Navbar -->
+   <!-- Navbar -->
    <nav class="header-bg">
-    <div class="#ffab91 deep-orange lighten-3 nav-wrapper">
-<ul>
-<li><a href="index.html">Anastasis Home</a></li>
-<li> <a href="Selection.html">Find us Here</a></li>
-<li> <a href="about.html">About Us</a></li>
-<li><a href="materialize.html">Bakery</a></li>
-<li><a href="materialize3.html">Bakery Interactive</a></li>         
-        </ul>
-    </div>
-</div>
-</nav>
+      <div class="deep-orange lighten-3 nav-wrapper">
+         <ul>
+            <li><a href="index.html">Anastasis Home</a></li>
+            <li><a href="Selection.html">Find us Here</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="materialize.html">Bakery</a></li>
+            <li><a href="materialize3.html">Bakery Interactive</a></li>         
+         </ul>
+      </div>
+   </nav>
 
-<div class="carousel">
-    <a class="carousel-item" href="#one!"><img src="images/almonds.jpg"></a>
-    <a class="carousel-item" href="#two!"><img src="images/halloween cake.jpg"></a>
-    <a class="carousel-item" href="#three!"><img src="images/torte.jpg"></a>
-    <a class="carousel-item" href="#four!"><img src="images/chocolate croissant.jpg"></a>
-    <a class="carousel-item" href="#five!"><img src="images/christmas cookie.jpg"></a>
-  </div>
+   <!-- Carousel -->
+   <div class="carousel">
+      <a class="carousel-item" href="#one!"><img src="images/almonds.jpg"></a>
+      <a class="carousel-item" href="#two!"><img src="images/halloween cake.jpg"></a>
+      <a class="carousel-item" href="#three!"><img src="images/torte.jpg"></a>
+      <a class="carousel-item" href="#four!"><img src="images/chocolate croissant.jpg"></a>
+      <a class="carousel-item" href="#five!"><img src="images/christmas cookie.jpg"></a>
+   </div>
 
-
- 
-<div id="radio-section" class="section container">
-    <h2>Select Your Favorite themed Treat</h2>
-    <form>
-        <p>
+   <!-- Radio Section -->
+   <div id="radio-section" class="section container">
+      <h2>Select Your Favorite themed Treat</h2>
+      <form>
+         <p>
             <label>
-                <input name="pastry" type="radio" value="Christmas Cookie" onclick="displayPastry()"/>
-                <span>Christmas Cookie</span>
+               <input name="pastry" type="radio" value="Christmas Cookie" onclick="displayPastry()"/>
+               <span>Christmas Cookie</span>
             </label>
-        </p>
-        <p>
+         </p>
+         <p>
             <label>
-                <input name="pastry" type="radio" value="Strawberry Torte" onclick="displayPastry()"/>
-                <span>Strawberry Torte</span>
+               <input name="pastry" type="radio" value="Strawberry Torte" onclick="displayPastry()"/>
+               <span>Strawberry Torte</span>
             </label>
-        </p>
-        <p>
+         </p>
+         <p>
             <label>
-                <input name="pastry" type="radio" value="Halloween Cake" onclick="displayPastry()"/>
-                <span>Halloween Cake</span>
+               <input name="pastry" type="radio" value="Halloween Cake" onclick="displayPastry()"/>
+               <span>Halloween Cake</span>
             </label>
-        </p>
-    </form>
-    <div id="pastry-response"></div>
-</div>
+         </p>
+      </form>
+      <div id="pastry-response"></div>
+   </div>
 
- <!-- Email Feedback Section -->
- <div id="feedback-section" class="section container">
-    <h2>Subscribe for Updates</h2>
-    <form onsubmit="submitEmail(event)">
-        <div class="input-field">
+   <!-- Email Feedback Section -->
+   <div id="feedback-section" class="section container">
+      <h2>Subscribe for Updates</h2>
+      <form onsubmit="submitEmail(event)">
+         <div class="input-field">
             <input id="email" type="email" required>
             <label for="email">Email</label>
-        </div>
-        <button type="submit" class="btn waves-effect waves-light">Subscribe</button>
-    </form>
-    <div id="email-response"></div>
-</div>
+         </div>
+         <button type="submit" class="btn waves-effect waves-light">Subscribe</button>
+      </form>
+      <div id="email-response"></div>
+   </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-<script>
-    // Initialize modal
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.modal');
-        var instances = M.Modal.init(elems);
-    });
+   <!-- Import Materialize JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script>
+      document.addEventListener('DOMContentLoaded', function() {
+         // Initialize modal
+         var modals = document.querySelectorAll('.modal');
+         M.Modal.init(modals);
 
+         // Initialize carousel
+         var carousels = document.querySelectorAll('.carousel');
+         M.Carousel.init(carousels);
+      });
 
-    // Function to display selected pastry
-    function displayPastry() {
-        const selectedPastry = document.querySelector('input[name="pastry"]:checked').value;
-        document.getElementById('pastry-response').innerText = `You selected: ${selectedPastry}`;
-    }
-    // Function to handle email subscription form submission
-    function submitEmail(event) {
-        event.preventDefault();
-        const email = document.getElementById('email').value;
-        document.getElementById('email-response').innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
-        document.getElementById('email').value = ''; // Clear the input
+      // Function to display selected pastry
+      function displayPastry() {
+         const selectedPastry = document.querySelector('input[name="pastry"]:checked').value;
+         document.getElementById('pastry-response').innerText = `You selected: ${selectedPastry}`;
+      }
 
-
-        // Display modal
-        const modalText = document.getElementById('modal-content-text');
-        modalText.innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
-        const modal = M.Modal.getInstance(document.getElementById('modal1'));
-        modal.open();
-    }
-</script>
+      // Function to handle email subscription form submission
+      function submitEmail(event) {
+         event.preventDefault();
+         const email = document.getElementById('email').value;
+         document.getElementById('email-response').innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+         document.getElementById('email').value = '';
+      }
+   </script>
 </body>
 </html>
