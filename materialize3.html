@@ -8,6 +8,17 @@
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <!--Import materialize.css-->
    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+   <!-- Additional styles for carousel -->
+   <style>
+      .carousel {
+         height: 400px; /* Set a height to ensure visibility */
+      }
+      .carousel img {
+         width: 100%; /* Ensure images take up full carousel width */
+         height: 100%; /* Scale images to fill carousel height */
+         object-fit: cover; /* Maintain image aspect ratio */
+      }
+   </style>
 </head>
 
 <body>
@@ -25,12 +36,12 @@
    </nav>
 
    <!-- Carousel -->
-   <div class="carousel">
-      <a class="carousel-item" href="#one!"><img src="images/almonds.jpg"></a>
-      <a class="carousel-item" href="#two!"><img src="images/halloween cake.jpg"></a>
-      <a class="carousel-item" href="#three!"><img src="images/torte.jpg"></a>
-      <a class="carousel-item" href="#four!"><img src="images/chocolate croissant.jpg"></a>
-      <a class="carousel-item" href="#five!"><img src="images/christmas cookie.jpg"></a>
+   <div class="carousel carousel-slider">
+      <a class="carousel-item" href="#one!"><img src="images/almonds.jpg" alt="Almonds"></a>
+      <a class="carousel-item" href="#two!"><img src="images/halloween cake.jpg" alt="Halloween Cake"></a>
+      <a class="carousel-item" href="#three!"><img src="images/torte.jpg" alt="Torte"></a>
+      <a class="carousel-item" href="#four!"><img src="images/chocolate croissant.jpg" alt="Chocolate Croissant"></a>
+      <a class="carousel-item" href="#five!"><img src="images/christmas cookie.jpg" alt="Christmas Cookie"></a>
    </div>
 
    <!-- Radio Section -->
@@ -80,9 +91,13 @@
          var modals = document.querySelectorAll('.modal');
          M.Modal.init(modals);
 
-         // Initialize carousel
+         // Initialize carousel with options
          var carousels = document.querySelectorAll('.carousel');
-         M.Carousel.init(carousels);
+         M.Carousel.init(carousels, {
+            fullWidth: true,
+            indicators: true,
+            duration: 200
+         });
       });
 
       // Function to display selected pastry
