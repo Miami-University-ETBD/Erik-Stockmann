@@ -5,7 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Bakery Delight</title>
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+   <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
 
    
    <style>
@@ -230,6 +230,7 @@
     var elems = document.querySelectorAll('.collapsible');
     var instances = M.Collapsible.init(elems, options);
   });
+  var instance = M.Collapsible.getInstance(elem);
    </script>
 </body>
 </html>
