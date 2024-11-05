@@ -22,6 +22,9 @@
            background-color: #ffab91; /* Light red background */
            color: white;
        }
+       .collapse-class{
+margin-left: 20px;
+       }
    </style>
 </head>
 <body>
@@ -29,14 +32,14 @@
 
    <!-- Navbar -->
    <nav class="header-bg">
-       <div class="nav-wrapper">
+       <div class="#0c2f44 nav-wrapper">
 <ul>
    <li><a href="index.html">Anastasis Home</a></li>
    <li> <a href="Selection.html">Find us Here</a></li>
   <li> <a href="about.html">About Us</a></li>
  <li><a href="materialize2.html">bakery</a></li>
- <li><a href="materialize.html">Bavarian Recipe</a></li>
- <li><a href="materialize3.html">Bakery Interactive</a></li>                
+ <li><a href="materialize3.html">Bakery Interactive</a></li>   
+ <li><a href="materialize.html">Bavarian Recipe</a></li>             
            </ul>
        </div>
    </div>
@@ -120,8 +123,8 @@
         <p><a href="#">This is a link</a></p>
       </div>
       <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        <span class="card-title grey-text text-darken-4">Bavarian sourdough<i class="material-icons right">close</i></span>
+        <p>Alt bayerische Bauernbrot, or Traditional Bavarian farmer's Bread is a hearty sourdough bread baked with wheat, and sometimes also with rye, and barley. It usually comes with seeds. It is a challenging bread to bake, yet excellent to eat.</p>
       </div>
        </div>
 
@@ -143,7 +146,7 @@
             <p><a href="#">Link</a></p>
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <span class="card-title grey-text text-darken-4">Bavarian Semmel rolls<i class="material-icons right">close</i></span>
             <p>Brotchen, or bread rolls, are common types of bread in germany similar to a hamburger bun, except they are usually high quality, fresh, and are very versatile. They can be used for sandwiches, toast, snacks, or anything you want to use it for. In Bavaria, they are known as Semmel.</p>
           </div>
            </div>
@@ -161,24 +164,24 @@
            <blockquote>Especially Shortbread</blockquote>
        </div>-->
       </div>
-
+<div class="collapse-class">
       <div class="col 8 m8">Find out more about specialty baked items!</div>
 <!--JS Stuff-->
 <ul class="collapsible">
     <li>
-      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Strawberry Torte</div>
+      <div class="collapsible-header"><i class="material-icons">blur_circular</i>Strawberry Torte</div>
       <div class="collapsible-body"><span>A strawberry torte is a common type of Cake served in Germany. Traditionally, there is a cake bottom, with jelly or glaze on top. Then it is topped with strawberries. The cake is semi Sweet, while the strawberry and glaze are sweet.</span></div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">place</i>Choko-Croissant</div>
+      <div class="collapsible-header"><i class="material-icons">blur_circular</i>Choko-Croissant</div>
       <div class="collapsible-body"><span>Chocolate Croissants are a common treat throughout western Europe. It can vary in composition. It involves a croissant and chocolate. Commonly, you may see the Croissant drizzled with chocolate, full of chocolate chunks, or stuffed with chocolate cream.</span></div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">whatshot</i>Cinnamon-roasted Almonds</div>
+      <div class="collapsible-header"><i class="material-icons">blur_circular</i>Cinnamon-roasted Almonds</div>
       <div class="collapsible-body"><span>Cinnamon-roasted Almonds are a favorite christmas treat at Christkindelsmarkts in Germany. They are exactly what you would imagine! almonds roasted with cinnamon and sugar.</span></div>
     </li>
   </ul>
-
+</div>
 
 
    <!-- Contact Section -->
@@ -224,13 +227,12 @@
    </footer>
 
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
    <script>
-       document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.collapsible');
-    var instances = M.Collapsible.init(elems, options);
-  });
-  var instance = M.Collapsible.getInstance(elem);
+    M.Collapsible.init(elems);
+});
    </script>
 </body>
 </html>

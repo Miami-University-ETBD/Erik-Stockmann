@@ -10,8 +10,11 @@
    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
    <!--fixing carousel settings-->
    <style>
+    .carousel-container{
+        margin-top: 20px;
+    }
     .carousel.carousel-slider {
-       height: 500px; /* Set carousel height */
+       height: 200px; /* Set carousel height */
     }
 
     .carousel-item img {
@@ -25,26 +28,28 @@
 <body>
    <!-- Navbar -->
    <nav class="header-bg">
-      <div class="deep-orange lighten-3 nav-wrapper">
+      <div class="#0c2f44 nav-wrapper">
          <ul>
             <li><a href="index.html">Anastasis Home</a></li>
             <li><a href="Selection.html">Find us Here</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="materialize.html">Bakery</a></li>
-            <li><a href="materialize3.html">Bakery Interactive</a></li>         
+            <li><a href="materialize2.html">Bakery</a></li> 
+            <li><a href="materialize3.html">Bakery Interactive</a></li>      
+            <li><a href="materialize.html">Bavarian Recipe</a></li>      
          </ul>
       </div>
    </nav>
 
    <!-- Carousel -->
-   <div class="carousel carousel-slider center" data-indicators="true">
-      <a class="carousel-item" href="#one!"><img src="images/almonds.jpg"></a>
-      <a class="carousel-item" href="#two!"><img src="images/halloween cake.jpg"></a>
-      <a class="carousel-item" href="#three!"><img src="images/torte.jpg"></a>
-      <a class="carousel-item" href="#four!"><img src="images/chocolate croissant.jpg"></a>
-      <a class="carousel-item" href="#five!"><img src="images/christmas cookie.jpg"></a>
-   </div>
-
+    <div class="carousel-container">
+        <div class="carousel carousel-slider center" data-indicators="true">
+          <a class="carousel-item" href="#one!"><img src="images/almonds.jpg"></a>
+          <a class="carousel-item" href="#two!"><img src="images/halloween cake.jpg"></a>
+          <a class="carousel-item" href="#three!"><img src="images/torte.jpg"></a>
+          <a class="carousel-item" href="#four!"><img src="images/chocolate croissant.jpg"></a>
+          <a class="carousel-item" href="#five!"><img src="images/christmas cookie.jpg"></a>
+        </div>
+    </div>
    <!-- Radio Section -->
    <div id="radio-section" class="section container">
       <h2>Select Your Favorite themed Treat</h2>
@@ -65,6 +70,18 @@
             <label>
                <input name="pastry" type="radio" value="Halloween Cake" onclick="displayPastry()"/>
                <span>Halloween Cake</span>
+            </label>
+         </p>
+         <p>
+            <label>
+               <input name="pastry" type="radio" value="Choko-Croissant" onclick="displayPastry()"/>
+               <span>Choko-Croissant</span>
+            </label>
+         </p>
+         <p>
+            <label>
+               <input name="pastry" type="radio" value="Cinnamon-roasted Almonds" onclick="displayPastry()"/>
+               <span>Cinnamon-roasted Almonds</span>
             </label>
          </p>
       </form>
