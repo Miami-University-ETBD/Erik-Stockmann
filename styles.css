@@ -9,6 +9,28 @@ body{
         color:rgba(20,20,30,.9);
         padding:10px;
     }
+    .starterdiv{
+     max-width:100%;background-color:#201d49;padding:10px;border: 2px solid slategrey;margin-bottom:100px;
+    }
+    .TreeOne{
+      color:azure;
+    }
+    #panel, #flip {
+      padding: 10px;
+      text-align: center;
+      background-color: #f7dbe4;
+      border: solid 2px #757787;
+    }
+    .displayn{
+      display:none;
+      max-width:600px;
+      margin-bottom:15px;
+      margin-left:15px;
+    }
+    #panel {
+      padding: 30px;
+      display: none;
+    }
     .navigation{
       overflow:hidden;
       background-color:rgba(30,30,40,.95);
