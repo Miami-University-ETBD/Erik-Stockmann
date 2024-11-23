@@ -1,7 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Rubik);
+html, body {
+  margin: 0; /* Remove default margins on the body and html */
+  padding: 0; /* Remove default padding */
+}
 body{
     background-color: rgb(220,230,230);
     font-family: Rubik, sans-serif;
+    margin: 20px; /* Add back margin for the document */
     }
 .fthead{
   font-family: Spectral, sans serif;
@@ -44,8 +49,15 @@ body{
       overflow:hidden;
       background-color:rgba(30,30,40,.95);
       padding: 10px;
+
       font-family: Spectral, sans serif;
-      margin:0;
+      margin: -20px; /* Remove the document margin around the navigation */
+      padding: 12px 20px; /* Internal padding for space around links */
+ 
+      box-sizing: border-box; /* Ensures padding doesn't affect the width */
+      width: 100vw; /* Makes the navbar span the entire viewport width */
+      position: relative;
+      
     }
     .navigation a {
       color:rgb(239, 238, 231);
@@ -150,6 +162,10 @@ body{
       color:rgb(220,230,230);
       padding:10 px;
       text-align:right;
+      margin: -20px; /* Remove document margin for these elements */
+    padding: 20px; /* Add padding for internal spacing */
+    box-sizing: border-box; /* Prevents padding from adding to width */
+    width: 100vw; /* Ensures the footer spans the entire viewport width */
       padding-right:15%;
       margin-top:10px;
       padding-top:20px;
