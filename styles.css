@@ -1,6 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Rubik);
 body{
-    background-color: rgb(220,230,230)
+    background-color: rgb(220,230,230);
+    font-family: Rubik, sans-serif;
     }
+.fthead{
+  font-family: Spectral, sans serif;
+  font-size:120%;
+}
+.ftbody{
+  font-family: Rubik, sans-serif;
+}
     p{
         color:rgba(20,20,30,.9);
         padding-left:10px;
@@ -35,9 +44,11 @@ body{
       overflow:hidden;
       background-color:rgba(30,30,40,.95);
       padding: 10px;
+      font-family: Spectral, sans serif;
+      margin:0;
     }
     .navigation a {
-      color:rgb(220,210,200);
+      color:rgb(239, 238, 231);
       text-align:center;
       text-decoration:none;
       font-size:20px;
@@ -45,9 +56,14 @@ body{
       margin-right:20px;
     
     }
+
     .navigation a:hover{
       background-color:rgba(20,20,30,.9);
       padding: 10px 5px;
+      }
+      .navigaion ul{
+        margin: 0;
+        padding: 0;
       }
     li.materials{
         color:rgba(20,20,30,.9);
@@ -58,10 +74,12 @@ body{
     h1{
         color:rgba(20,20,30,.9);
         margin-bottom:15px;
+        font-family: Spectral, sans serif;
     }
     h2{
         color:rgba(20,20,30,.9);
         margin-bottom:15px;
+        font-family: Spectral, sans serif;
     }
     div{ color:rgba(20,20,30,.9);
     }
@@ -85,7 +103,7 @@ body{
     li a{
     
     display:block;
-    color:rgb(220,210,200);
+    color:rgb(239, 238, 231);
     
     padding: 10px;
     text-align:center;
@@ -123,9 +141,9 @@ body{
     }
     header{
       text-align:center;
-      font-family: Avenir Next, Tahoma, sans serif;
-      font-size:150%;
-      margin-top:10px;margin-bottom:15px;
+      font-family: Spectral, sans serif;
+      font-size:300%;
+      margin-top:3px;margin-bottom:7px;
     }
     footer{
       background-color:rgba(30,30,40,.95);
