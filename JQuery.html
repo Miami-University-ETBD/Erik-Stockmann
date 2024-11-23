@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Spectral|Rubik">
 <script
 src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
@@ -38,17 +39,18 @@ $("#ne").click(function(){
 </head>
 
 <body>
-<header>Anastasis</header>
+
 <nav class="navigation">
 <a href="index.html">Home</a>
 <a href="materialize2.html">Bakery</a>
 <a href="materialize3.html">Bakery Interactive</a>  
+<a href="materialize.html">Bavarian Recipe</a>
 <a href="Bootstrap.html">About our Art</a>
 <a href="JQuery.html">Art Gallery</a> 
 <a href="Selection.html">Store Location</a>
 <a href="about.html">About Us</a>
 </nav>
-
+<header style="text-align:left">Anastasis</header>
 <div id="flip">Mystery Artwork of the Week! Click to view</div>
 <div id="panel">
     <img src="images/leaves.jpg" alt="Leaves on a Fall path" style="max-width:100%; height:250px;">
@@ -62,22 +64,24 @@ $("#ne").click(function(){
 
 <div>
     <div style="margin-right:400px;margin-bottom:20px;">
-<button ID="ne">Click to rate Art highly:</button>
+<button ID="ee">Click if this Art is trash:</button>
 <button ID="wo">Click if you find the Art mid:</button>
-<button ID="ee">Click tif you find the art trash:</button>
+<button ID="ne">Click if you like this Art:</button>
 </div>
     <div>
-        <div>
+        <div class="move1">
     <img class="move" ID="one"src="images/dragon.jpg" alt="Dragon Crest" style="max-width:100%; height:250px;margin-left:200px;margin-bottom:2px;position:relative"><br>
     <button class="move"style="margin-left:225px; margin-bottom:12px;" ID="One">Click to find out More:</button><br>
     <div ID="div1"class="displayn">This Artwork is called Dragon Crest. It is supposed to be like a medieval coat of Arms with a Dragon. It is a screenprint made in screenprinting class at Miami University. The Registration is slightly off. The screenprint was made using an Emulsion technique.</div>
         </div>
-        <div>
+
+            <div class="move1">
     <img class="move" ID="two"src="images/YinYang.jpg" alt="YingYang Koi" style="max-width:100%; height:250px;margin-left:200px;margin-bottom:2px;position:relative"><br>
     <button class="move"style="margin-left:225px; margin-bottom:12px;" ID="Two">Click to find out More:</button><br>
     <div ID="div2"class="displayn">This Artwork is called Yin Yang. It is two Koi fish swimming around each other. It was drawn using graphite pencils, and then drawn over with ink pens.</div>
         </div>
-        <div>
+
+        <div class="move1">
     <img class="move" ID="three"src="images/Screenprint.png" alt="YingYang Koi" style="max-width:100%; height:250px;margin-left:200px;margin-bottom:2px;position:relative"><br>
     <button class="move"style="margin-left:225px; margin-bottom:12px;" ID="Three">Click to find out More:</button><br>
     <div ID="div3"class="displayn">This Artwork is called a Peacefull Ripple. It is supposed to resemble a Koi fish in somewhat japanese woodblock styles. It is a screenprint made in screenprinting class at Miami University. The screenprint was made using a Stencil technique.</div>
